@@ -1,0 +1,23 @@
+{
+  "1": {
+    "id": 1,
+    "cliente": {
+      "id": 1,
+      "nome": "Kariane Neves",
+      "email": "Ka@gmail.com"
+    },
+    "status": "FILA",
+    "valorTotal": 8500.0,
+    "itens": [
+      {
+        "produto": {
+          "id": 1,
+          "nome": "Notebook XPS",
+          "preco": 8500.0,
+          "categoria": "ELETRONICOS"
+        },
+        "quantidade": 1
+      }
+    ]
+  }
+}

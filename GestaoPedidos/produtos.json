@@ -1,0 +1,20 @@
+{
+  "1": {
+    "id": 1,
+    "nome": "Notebook XPS",
+    "preco": 8500.0,
+    "categoria": "ELETRONICOS"
+  },
+  "2": {
+    "id": 2,
+    "nome": "Arquitetura limpa",
+    "preco": 95.5,
+    "categoria": "LIVROS"
+  },
+  "3": {
+    "id": 3,
+    "nome": "Caf� Gourmet 500mg",
+    "preco": 42.0,
+    "categoria": "ALIMENTOS"
+  }
+}
