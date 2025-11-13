@@ -6,12 +6,21 @@ Este projeto é uma aplicação de console em Java para gerenciar clientes, prod
 
 ## Como Compilar e Executar
 
+**IMPORTANTE:** Este projeto usa uma biblioteca externa (Google Gson) para o Bônus de salvar em JSON. O arquivo `gson-2.13.2.jar` já está na pasta `lib` do projeto.
+
 ### Opção 1: Via VS Code (Recomendado)
+
 1.  Verifique se o "Extension Pack for Java" está instalado.
-2.  Abra o arquivo `App.java` (localizado em `src/com/seusistema/gestao/app/`).
-3.  Clique no botão "Run" (ou "Executar") que aparece acima do método `main`.
+2.  Abra o projeto no VS Code (Vá em `File` > `Open Folder...` e escolha a pasta `GestaoPedidos`).
+3.  **Configurar a biblioteca (Passo Crítico):**
+    * O VS Code pode mostrar erros vermelhos (nas classes `...ArquivoRepository`) porque ele não "enxergou" o arquivo `.jar`.
+    * **Para corrigir:** Aperte `Ctrl + Shift + P`, digite `Java: Configure Classpath`, vá até a seção "Referenced Libraries", clique no `+` (adicionar) e selecione o arquivo `gson-2.13.2.jar` que está dentro da pasta `lib` do projeto.
+4.  **Executar:** Após configurar, abra o `App.java` (em `src/com/seusistema/gestao/app/`) e clique no botão "Run" (Executar) acima do `main`.
 
 ### Opção 2: Via Terminal (Manual)
+
+A biblioteca `gson.jar` (na pasta `lib`) é **obrigatória** no classpath para compilar e executar.
+
 1.  Navegue até a pasta raiz do projeto.
 2.  Compile todo o código-fonte para a pasta `bin` (crie-a se não existir):
     ```bash
